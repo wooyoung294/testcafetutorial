@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "prevStart": "node ./bin/www",
-    "start": "node app.js",
+    "start": "node ./bin/www",
     "InitTestChrome": "testcafe chrome -e ./InitTest.js --disable-native-automation --reporter cucumber-json",
     "InitTestEdge": "testcafe edge -e ./InitTest.js --disable-native-automation --reporter cucumber-json",
     "InitTestFireFox": "testcafe firefox -e ./InitTest.js --disable-native-automation --reporter cucumber-json",

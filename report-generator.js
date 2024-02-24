@@ -45,7 +45,7 @@ report.generate({
         '        </div>' +
         '    </div>' +
         '<script>' +
-        'window.onload=function(){document.querySelector("body > nav > div > p:nth-child(4)").textContent="";document.querySelector("body > nav > div > p:nth-child(4)").insertAdjacentHTML("beforeend",`<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Open Modal</button>`)}' +
+        'window.onload=function(){document.querySelector("body > nav > div > p:nth-child(4)").textContent="";document.querySelector("body > nav > div > p:nth-child(4)").insertAdjacentHTML("beforeend",`<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">RUN TEST</button>`)}' +
         '</script>'+
         '<script>' +
             'function f() {' +
