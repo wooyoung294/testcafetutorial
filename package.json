@@ -1,0 +1,25 @@
+{
+  "name": "testcafetutorial",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "InitTestChrome": "testcafe chrome -e ./InitTest.js --disable-native-automation --reporter cucumber-json",
+    "InitTestEdge": "testcafe edge -e ./InitTest.js --disable-native-automation --reporter cucumber-json",
+    "InitTestFireFox": "testcafe firefox -e ./InitTest.js --disable-native-automation --reporter cucumber-json",
+    "report": "node report-generator.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "multiple-cucumber-html-reporter": "^3.6.2",
+    "node-cron": "^3.0.3",
+    "pug": "2.0.0-beta11",
+    "testcafe": "^3.5.0",
+    "testcafe-reporter-cucumber-json": "^6.3.0"
+  }
+}
