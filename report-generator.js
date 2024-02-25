@@ -13,7 +13,7 @@ report.generate({
     displayReportTime: true,
     durationInMS: true,
     pageFooter:
-        '<link href="assets/css/style.css" rel="stylesheet">' +
+        // '<link href="assets/css/style.css" rel="stylesheet">' +
         '<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">\n' +
         '        <div class="modal-dialog" role="document">' +
         '            <div class="modal-content">' +
@@ -45,12 +45,13 @@ report.generate({
         '        </div>' +
         '    </div>' +
         '<script>' +
-        'window.onload=function(){document.querySelector("body > nav > div > p:nth-child(4)").textContent="";document.querySelector("body > nav > div > p:nth-child(4)").insertAdjacentHTML("beforeend",`<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">RUN TEST</button>`)}' +
+        'if(document.querySelector("body > nav > div > p:nth-child(4)")!=null){window.onload=function(){document.querySelector("body > nav > div > p:nth-child(4)").textContent="";document.querySelector("body > nav > div > p:nth-child(4)").insertAdjacentHTML("beforeend",`<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">RUN TEST</button>`)}}' +
         '</script>'+
         '<script>' +
             'function f() {' +
             'document.querySelector("#myModal").insertAdjacentHTML("beforeend",`<div class="spinner-container"><div class="spinner"></div><p>5분정도 소요됩니다.</p></div>`);' +
             'fetch(`http://34.47.73.82:3000/test?testScript=${document.querySelector("#testScript").value}&browser=${document.querySelector("#browser").value}`)' +
+            // 'fetch(`http://localhost:3000/test?testScript=${document.querySelector("#testScript").value}&browser=${document.querySelector("#browser").value}`)' +
             '    .then(res => res.text())' +
             '    .then(data => data === "SUCCESS" &&location.reload(true))' +
             '    .then(data => data === "SUCCESS" &&console.log(data))' +
