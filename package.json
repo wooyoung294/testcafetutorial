@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "InitTestChrome": "testcafe chrome:headless -e ./InitTest.js --disable-native-automation --reporter cucumber-json",
+    "InitTestChrome": "testcafe chrome -e ./InitTest.js --disable-native-automation --reporter cucumber-json",
     "InitTestEdge": "testcafe edge -e ./InitTest.js --disable-native-automation --reporter cucumber-json",
     "InitTestFireFox": "testcafe firefox -e ./InitTest.js --disable-native-automation --reporter cucumber-json",
     "report": "node report-generator.js"
