@@ -52,7 +52,8 @@ report.generate({
             'document.querySelector("#myModal").insertAdjacentHTML("beforeend",`<div class="spinner-container"><div class="spinner"></div><p>테스트 중</p></div>`);' +
             'fetch(`http://34.47.73.82:3000/test?testScript=${document.querySelector("#testScript").value}&browser=${document.querySelector("#browser").value}`)' +
             '    .then(res => res.text())' +
-            '    .then(data => data === "SUCCESS" &&location.reload(true))' +
+            // '    .then(data => data === "SUCCESS" &&location.reload(true))' +
+            '    .then(data => data === "SUCCESS" &&console.log(data))' +
             '    .catch(error => console.error("Error:", error));' +
             '}' +
         '</script>',
