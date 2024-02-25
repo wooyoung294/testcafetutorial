@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "InitTestChrome": "testcafe chrome:headless --no-sandbox -e ./InitTest.js --reporter cucumber-json",
-    "InitTestEdge": "testcafe edge:headless --no-sandbox -e ./InitTest.js --reporter cucumber-json",
-    "InitTestFireFox": "testcafe firefox:headless --no-sandbox -e ./InitTest.js --reporter cucumber-json",
+    "InitTestChrome": "xvfb-run testcafe chrome:headless --no-sandbox -e ./InitTest.js --reporter cucumber-json",
+    "InitTestEdge": "xvfb-run testcafe edge:headless --no-sandbox -e ./InitTest.js --reporter cucumber-json",
+    "InitTestFireFox": "xvfb-run testcafe firefox:headless --no-sandbox -e ./InitTest.js --reporter cucumber-json",
     "report": "node report-generator.js"
   },
   "dependencies": {
