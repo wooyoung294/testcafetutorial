@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "InitTestChrome": "xvfb-run testcafe \"chrome:headless --no-sandbox\" ./InitTest.js --reporter cucumber-json",
     "InitTestEdge": "xvfb-run testcafe \"edge:headless --no-sandbox\" ./InitTest.js --reporter cucumber-json",
-    "InitTestFireFox": "xvfb-run testcafe \"firefox:headless --no-sandbox\" ./InitTest.js --reporter cucumber-json",
+    "InitTestFirefox": "xvfb-run testcafe \"firefox:headless --no-sandbox\" ./InitTest.js --reporter cucumber-json",
     "report": "node report-generator.js"
   },
   "dependencies": {
