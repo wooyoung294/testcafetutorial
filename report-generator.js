@@ -50,13 +50,12 @@ report.generate({
         '<script>' +
             'function f() {' +
             'document.querySelector("#myModal").insertAdjacentHTML("beforeend",`<div class="spinner-container"><div class="spinner"></div><p>테스트 중</p></div>`);' +
-            'fetch(`http://localhost:3000/test?testScript=${document.querySelector("#testScript").value}&browser=${document.querySelector("#browser").value}`)' +
+            'fetch(`http://34.47.73.82/test?testScript=${document.querySelector("#testScript").value}&browser=${document.querySelector("#browser").value}`)' +
             '    .then(res => res.text())' +
             '    .then(data => data === "SUCCESS" &&location.reload(true))' +
             '    .catch(error => console.error("Error:", error));' +
             '}' +
         '</script>',
-// <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#myModal">Open Modal</button>
     customData: {
         title: 'Run info',
         data: [
