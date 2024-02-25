@@ -29,7 +29,7 @@ report.generate({
         '                        <option value="InitTest">InitTest</option>' +
         '                    </select>' +
         '                    <label>' +
-        '                        Test 할 브라우져를 선택해주세요. (해당 브라우져가 설치되어 있어야 합니다.' +
+        '                        Test 할 브라우져를 선택해주세요.' +
         '                    </label>' +
         '                   <select class="form-control" id="browser">' +
         '                        <option value="Chrome">chrome</option>' +
