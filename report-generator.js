@@ -32,9 +32,9 @@ report.generate({
         '                        Test 할 브라우져를 선택해주세요.' +
         '                    </label>' +
         '                   <select class="form-control" id="browser">' +
-        '                        <option value="Chrome">chrome</option>' +
-        '                       <option value="Edge">edge</option>' +
-        '                       <option value="Firefox">InitTest</option>' +
+        '                        <option value="Chrome">Chrome</option>' +
+        '                       <option value="Edge">Edge</option>' +
+        '                       <option value="Firefox">FireFox</option>' +
         '                   </select>' +
         '                </div>' +
         '                <div class="modal-footer">' +
