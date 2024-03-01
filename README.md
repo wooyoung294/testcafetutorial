@@ -1,6 +1,6 @@
 # TESTCAFE로 TODO 페이지를 테스트해보자!
-+ 배포 주소 : tsetcafe.wooyu.world
-+ 테스트 페이지 주소 : todo.wooyu.world
++ 배포 주소 : http://tsetcafe.wooyu.world
++ 테스트 페이지 주소 : http://todo.wooyu.world
 <br/>
 
 ### 프로젝트 소개
